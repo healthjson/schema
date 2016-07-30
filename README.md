@@ -7,7 +7,7 @@ of them are required. See the schema definition below for more details:
 ## Example Response
 The example is also available under: http://example.health-json.org
 
-```json
+```javascript
 {
   "application": {
     "name": "app",
@@ -83,7 +83,7 @@ The example is also available under: http://example.health-json.org
 ## Schema
 The schema definition is also available under: http://schema.health-json.org
 
-```json
+```javascript
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Application Health",
