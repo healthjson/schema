@@ -305,8 +305,7 @@ The schema definition is also available under: http://schema.health-json.org
         "timeout": {
           "type": "string",
           "format": "date-time",
-          "description": "If state is \"open\", the date and time when the circuit breaker will switch back to half-open (in ISO 8601: https://tools.ietf.org/html/rfc3339#section-5.6)",
-          "minLength": 1
+          "description": "If state is \"open\", the date and time when the circuit breaker will switch back to half-open (in ISO 8601: https://tools.ietf.org/html/rfc3339#section-5.6)"
         },
         "lastCall": {
           "type": "string",
@@ -337,7 +336,7 @@ The schema definition is also available under: http://schema.health-json.org
         "name",
         "essential",
         "health",
-        "latency"
+        "state"
       ]
     },
     "filesystem": {
