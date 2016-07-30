@@ -5,6 +5,8 @@ possible properties, the application health response can contain, but not all
 of them are required. See the schema definition below for more details:
 
 ## Example Response
+The example is also available under: http://example.health-json.org
+
 ```json
 {
   "application": {
@@ -16,16 +18,16 @@ of them are required. See the schema definition below for more details:
     "version": "1.2.3"
   },
   "health": {
-    "databases": true,
+    "databases": false,
     "integrationpoints": true,
-    "circuitbreakers": true,
+    "circuitbreakers": false,
     "filesystem": true
   },
   "databases": [
     {
       "name": "postgres",
-      "health": true,
       "essential": true,
+      "health": true,
       "latency": 0.4,
       "connections": 10
     },
@@ -34,7 +36,8 @@ of them are required. See the schema definition below for more details:
       "essential": false,
       "health": true,
       "latency": 0.2,
-      "connections": 1
+      "connections": 1,
+      "error": "Connection refused"
     }
   ],
   "integrationpoints": [
@@ -42,17 +45,24 @@ of them are required. See the schema definition below for more details:
       "name": "google-maps-api",
       "essential": false,
       "health": true,
-      "latency": 22.5
+      "latency": 74.5,
+      "lastCall": "2016-04-05T18:25:41.454Z",
+      "lastSuccess": "2016-04-05T18:25:41.454Z",
+      "callsLastMinute": 31,
+      "callsLastHour": 1728
     }
   ],
   "circuitbreakers": [
     {
       "name": "authenticator",
-      "essential": true,
-      "state": "closed",
-      "health": true,
-      "latency": 4.7,
-      "timeout": "2016-04-05T18:25:43.511Z"
+      "essential": false,
+      "health": false,
+      "state": "open",
+      "timeout": "2016-04-05T18:26:12.454Z",
+      "lastCall": "2016-04-05T18:25:12.454Z",
+      "lastSuccess": "2016-04-05T18:25:10.454Z",
+      "callsLastMinute": 38,
+      "callsLastHour": 2144
     }
   ],
   "filesystems": [
