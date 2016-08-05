@@ -34,7 +34,7 @@ The example is also available under: http://example.health-json.org
     {
       "name": "redis",
       "essential": false,
-      "health": true,
+      "health": false,
       "latency": 0.2,
       "connections": 1,
       "error": "Connection refused"
