@@ -8,6 +8,13 @@ of them are required. See the schema definition below for more details:
 The example is also available under: http://example.health-json.org
 
 ```javascript
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+Date: Fri, 19 Aug 2016 04:42:17 GMT
+Server: nginx/1.11.1
+Content-Length: 10487
+Connection: Close
+
 {
   "application": {
     "name": "app",
@@ -72,8 +79,7 @@ The example is also available under: http://example.health-json.org
       "health": true,
       "readable": true,
       "writable": true,
-      "latency": 0.75,
-      "timeout": "2016-04-05T18:25:43.511Z"
+      "latency": 0.75
     }
   ]
 }
