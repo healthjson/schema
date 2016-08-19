@@ -5,7 +5,7 @@ possible properties, the application health response can contain, but not all
 of them are required. See the schema definition below for more details:
 
 ## Example Response
-The example is also available under: http://example.health-json.org
+The example is also available under: http://example.healthjson.org
 
 ```javascript
 HTTP/1.1 500 Internal Server Error
@@ -87,7 +87,7 @@ Connection: Close
 
 
 ## Schema
-The schema definition is also available under: http://schema.health-json.org
+The schema definition is also available under: http://schema.healthjson.org
 
 ```javascript
 {
