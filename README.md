@@ -49,7 +49,8 @@ Connection: Close
   ],
   "integrationpoints": [
     {
-      "name": "google-maps-api",
+      "name": "another-service",
+      "uri": "https://another.service.com/v1",
       "essential": false,
       "health": true,
       "latency": 74.5,
