@@ -1,13 +1,13 @@
-#Health JSON Schema
+# Health JSON Schema
 
 This is the first draft of the Health JSON schema. This example shows all
 possible properties, the application health response can contain, but not all
 of them are required. See the schema definition below for more details:
 
-## Example Response
+## Example Response: Unhealthy
 The example is also available under: http://example.healthjson.org
 
-```javascript
+```
 HTTP/1.1 500 Internal Server Error
 Content-Type: application/json
 Date: Fri, 19 Aug 2016 04:42:17 GMT
