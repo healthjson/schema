@@ -149,6 +149,11 @@
           "description": "Unique name/identifier of the integraiton point",
           "minLength": 1
         },
+        "uri": {
+          "type": "string",
+          "description": "Base URI of the integration point",
+          "minLength": 1
+        },
         "essential": {
           "type": "boolean",
           "description": "Integration point is essential for overall application health"

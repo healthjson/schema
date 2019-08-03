@@ -1,15 +1,15 @@
-#Health JSON Schema
+# Health JSON Schema
 
 This is the first draft of the Health JSON schema. This example shows all
 possible properties, the application health response can contain, but not all
 of them are required. See the schema definition below for more details:
 
-## Example Response
+## Example Response: Unhealthy
 The example is also available under: http://example.healthjson.org
 
-```javascript
+```
 HTTP/1.1 500 Internal Server Error
-Content-Type: application/json
+Content-Type: application/health+json
 Date: Fri, 19 Aug 2016 04:42:17 GMT
 Server: nginx/1.11.1
 Content-Length: 10487
@@ -49,7 +49,8 @@ Connection: Close
   ],
   "integrationpoints": [
     {
-      "name": "google-maps-api",
+      "name": "another-service",
+      "uri": "https://another.service.com/v1",
       "essential": false,
       "health": true,
       "latency": 74.5,
